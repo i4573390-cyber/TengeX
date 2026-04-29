@@ -164,8 +164,6 @@ function App() {
           <Logo />
           <nav>{t.nav.map((item, i) => <a key={item} href={links[i]}>{item}</a>)}</nav>
           <div className="right">
-            <a className="head-btn tg" href={TELEGRAM} target="_blank">TG</a>
-            <a className="head-btn wa" href={WHATSAPP} target="_blank">WA</a>
             {['ru','kz','en'].map(l => <button key={l} onClick={() => setLang(l)} className={lang === l ? 'active' : ''}>{l.toUpperCase()}</button>)}
           </div>
         </div>
