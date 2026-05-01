@@ -444,12 +444,13 @@ select:focus {
 }
 
 .cards.five {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card,
 .dark-card,
-.faq-item {
+.faq-item,
+.review-card {
   border-radius: 24px;
   padding: 26px;
   background: #ffffff;
@@ -488,6 +489,60 @@ select:focus {
   line-height: 1.8;
   color: #475467;
 }
+
+/* REVIEWS */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.review-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e2328;
+  color: #00b89c;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.review-top h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.review-top p {
+  margin: 4px 0 0;
+  color: #667085;
+  font-size: 14px;
+}
+
+.review-stars {
+  margin-top: 18px;
+  color: #00b89c;
+  letter-spacing: 0.12em;
+  font-size: 14px;
+}
+
+.review-text {
+  margin: 12px 0 0;
+  color: #475467;
+  line-height: 1.65;
+}
+
+/* FAQ / CONTACT */
 
 .faq-list {
   display: grid;
@@ -534,7 +589,8 @@ select:focus {
 
   .cards.four,
   .cards.three,
-  .cards.five {
+  .cards.five,
+  .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -588,7 +644,8 @@ select:focus {
 
   .cards.four,
   .cards.three,
-  .cards.five {
+  .cards.five,
+  .reviews-grid {
     grid-template-columns: 1fr;
   }
 
