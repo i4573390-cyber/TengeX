@@ -6,19 +6,28 @@ const TELEGRAM = "https://t.me/TengeXExchange";
 const WHATSAPP =
   "https://wa.me/77752676311?text=Здравствуйте,%20хочу%20узнать%20курс%20обмена";
 
-const cities = ["Кызылорда", "Костанай", "Атырау", "Алматы", "Уральск"];
+const cities = [
+  "Кызылорда",
+  "Костанай",
+  "Атырау",
+  "Алматы",
+  "Уральск",
+  "Астана",
+  "Караганда",
+  "Павлодар",
+];
 
 const cryptoAssets = ["USDT", "BTC", "ETH", "TON", "BNB", "SOL", "USDC"];
 const fiatAssets = ["KZT", "RUB", "USD", "EUR"];
 
 const rates = {
-  USDT: { KZT: 465, RUB: 91, USD: 0.998, EUR: 0.92 },
-  USDC: { KZT: 465, RUB: 91, USD: 0.998, EUR: 0.92 },
-  BTC: { KZT: 50500000, RUB: 9450000, USD: 103500, EUR: 95200 },
-  ETH: { KZT: 1800000, RUB: 337000, USD: 3700, EUR: 3400 },
-  TON: { KZT: 1550, RUB: 290, USD: 3.18, EUR: 2.93 },
-  BNB: { KZT: 335000, RUB: 62700, USD: 688, EUR: 633 },
-  SOL: { KZT: 96500, RUB: 18100, USD: 198, EUR: 182 },
+  USDT: { KZT: 465, RUB: 76, USD: 0.998, EUR: 0.92 },
+  USDC: { KZT: 465, RUB: 76, USD: 0.998, EUR: 0.92 },
+  BTC: { KZT: 50500000, RUB: 7600000, USD: 103500, EUR: 95200 },
+  ETH: { KZT: 1800000, RUB: 285000, USD: 3700, EUR: 3400 },
+  TON: { KZT: 1550, RUB: 250, USD: 3.18, EUR: 2.93 },
+  BNB: { KZT: 335000, RUB: 52000, USD: 688, EUR: 633 },
+  SOL: { KZT: 96500, RUB: 15000, USD: 198, EUR: 182 },
 };
 
 const text = {
@@ -77,6 +86,41 @@ const text = {
     securityText:
       "TengeX работает через понятный процесс: заявка, подтверждение курса, выбор способа обмена и сопровождение менеджера до завершения сделки.",
 
+    reviewsTitle: "Отзывы клиентов",
+    reviewsSubtitle: "Что говорят клиенты TengeX",
+    reviews: [
+      [
+        "Айбек",
+        "Кызылорда",
+        "Обменял USDT на тенге через Telegram. Быстро ответили, курс заранее подтвердили, всё прошло спокойно.",
+      ],
+      [
+        "Нурлан",
+        "Атырау",
+        "Удобно, что можно выбрать формат обмена. Мне подошёл перевод, менеджер всё объяснил по шагам.",
+      ],
+      [
+        "Данияр",
+        "Алматы",
+        "Понравилось, что без лишней суеты. Написал, уточнил курс, договорились и завершили обмен.",
+      ],
+      [
+        "Мадина",
+        "Костанай",
+        "Пользовалась впервые, переживала. Менеджер всё объяснил, обмен прошёл понятно и безопасно.",
+      ],
+      [
+        "Иван",
+        "Уральск",
+        "Нормальный сервис, курс сразу посчитался на сайте. Потом подтвердил условия в Telegram.",
+      ],
+      [
+        "Алексей",
+        "Астана",
+        "Быстрая связь и понятные условия. Удобно, что есть Telegram и WhatsApp.",
+      ],
+    ],
+
     faqTitle: "FAQ",
     faq: [
       [
@@ -93,7 +137,7 @@ const text = {
       ],
       [
         "В каких городах работает TengeX?",
-        "Кызылорда, Костанай, Атырау, Алматы и Уральск.",
+        "Кызылорда, Костанай, Атырау, Алматы, Уральск, Астана, Караганда и Павлодар.",
       ],
     ],
 
@@ -157,6 +201,41 @@ const text = {
     securityText:
       "TengeX түсінікті процесс арқылы жұмыс істейді: өтінім, курсты растау, айырбас тәсілін таңдау және мәміле аяқталғанға дейін менеджердің сүйемелдеуі.",
 
+    reviewsTitle: "Клиент пікірлері",
+    reviewsSubtitle: "TengeX клиенттері не дейді",
+    reviews: [
+      [
+        "Айбек",
+        "Қызылорда",
+        "USDT-ті теңгеге Telegram арқылы айырбастадым. Жылдам жауап берді, курсты алдын ала растады, бәрі тыныш өтті.",
+      ],
+      [
+        "Нұрлан",
+        "Атырау",
+        "Айырбас форматын таңдауға болатыны ыңғайлы. Маған аударым қолайлы болды, менеджер бәрін кезең-кезеңімен түсіндірді.",
+      ],
+      [
+        "Данияр",
+        "Алматы",
+        "Артық әуре жоқ. Жаздым, курсты нақтыладым, келісіп, айырбасты аяқтадық.",
+      ],
+      [
+        "Мадина",
+        "Қостанай",
+        "Алғаш рет қолдандым, басында уайымдадым. Менеджер бәрін түсіндірді, айырбас түсінікті әрі қауіпсіз өтті.",
+      ],
+      [
+        "Иван",
+        "Орал",
+        "Жақсы сервис, курс сайтта бірден есептелді. Кейін шарттарды Telegram арқылы растадым.",
+      ],
+      [
+        "Алексей",
+        "Астана",
+        "Байланыс жылдам, шарттар түсінікті. Telegram және WhatsApp болғаны ыңғайлы.",
+      ],
+    ],
+
     faqTitle: "FAQ",
     faq: [
       [
@@ -173,7 +252,7 @@ const text = {
       ],
       [
         "TengeX қай қалаларда жұмыс істейді?",
-        "Қызылорда, Қостанай, Атырау, Алматы және Орал.",
+        "Қызылорда, Қостанай, Атырау, Алматы, Орал, Астана, Қарағанды және Павлодар.",
       ],
     ],
 
@@ -237,6 +316,41 @@ const text = {
     securityText:
       "TengeX works through a clear process: request, rate confirmation, exchange method selection and manager support until the deal is completed.",
 
+    reviewsTitle: "Client reviews",
+    reviewsSubtitle: "What TengeX clients say",
+    reviews: [
+      [
+        "Aibek",
+        "Kyzylorda",
+        "I exchanged USDT to tenge through Telegram. They replied quickly, confirmed the rate in advance, and everything went smoothly.",
+      ],
+      [
+        "Nurlan",
+        "Atyrau",
+        "It is convenient that you can choose the exchange format. Transfer worked well for me, and the manager explained every step.",
+      ],
+      [
+        "Daniyar",
+        "Almaty",
+        "No unnecessary hassle. I messaged them, checked the rate, agreed on the terms, and completed the exchange.",
+      ],
+      [
+        "Madina",
+        "Kostanay",
+        "It was my first time, so I was cautious. The manager explained everything, and the exchange felt clear and safe.",
+      ],
+      [
+        "Ivan",
+        "Uralsk",
+        "Good service. The website calculated the rate first, then I confirmed the terms in Telegram.",
+      ],
+      [
+        "Alexey",
+        "Astana",
+        "Fast communication and clear terms. It is convenient that both Telegram and WhatsApp are available.",
+      ],
+    ],
+
     faqTitle: "FAQ",
     faq: [
       [
@@ -253,7 +367,7 @@ const text = {
       ],
       [
         "Which cities does TengeX operate in?",
-        "Kyzylorda, Kostanay, Atyrau, Almaty and Uralsk.",
+        "Kyzylorda, Kostanay, Atyrau, Almaty, Uralsk, Astana, Karaganda and Pavlodar.",
       ],
     ],
 
@@ -461,7 +575,7 @@ function App() {
             <h2>{t.popularTitle}</h2>
 
             <div className="cards four">
-              {["USDT → KZT", "USDT → USD", "BTC → KZT", "ETH → EUR"].map((item) => (
+              {["USDT → KZT", "USDT → RUB", "USDT → USD", "BTC → KZT"].map((item) => (
                 <div className="card" key={item}>
                   <Icon type="exchange" />
                   <h3>{item}</h3>
@@ -550,6 +664,30 @@ function App() {
           <div className="container narrow">
             <h2>{t.securityTitle}</h2>
             <p className="big-text">{t.securityText}</p>
+          </div>
+        </section>
+
+        <section className="section light-section" id="reviews">
+          <div className="container">
+            <div className="section-kicker">{t.reviewsSubtitle}</div>
+            <h2>{t.reviewsTitle}</h2>
+
+            <div className="reviews-grid">
+              {t.reviews.map(([name, reviewCity, review]) => (
+                <div className="review-card" key={`${name}-${reviewCity}`}>
+                  <div className="review-top">
+                    <div className="review-avatar">{name[0]}</div>
+                    <div>
+                      <h3>{name}</h3>
+                      <p>{reviewCity}</p>
+                    </div>
+                  </div>
+
+                  <div className="review-stars">★★★★★</div>
+                  <p className="review-text">{review}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
