@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";
 
-const TELEGRAM = "https://t.me/TengeXExchange";
+const TELEGRAM = "https://telegram.me/TengeXExchange";
 const WHATSAPP =
   "https://wa.me/77752676311?text=Здравствуйте,%20хочу%20узнать%20курс%20обмена";
 
